@@ -1,9 +1,9 @@
 ## SETUP
 * Clone the repository in a temporary directory:
 
-  (HTTPS) `git clone --recursive https://github.com/archnnj/bash_home.git ~/home`
+  (HTTPS) `git clone --recursive https://github.com/PCudrano/bash_home.git ~/home`
   <br/>
-  (GIT) `git clone --recursive git@github.com:archnnj/bash_home.git ~/home`
+  (GIT) `git clone --recursive git@github.com:PCudrano/bash_home.git ~/home`
 
 * Access the temporary directory: `cd ~/home`
 
