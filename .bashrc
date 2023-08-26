@@ -201,6 +201,11 @@ esac
 # Uncomment to use my own conda env
 # export PATH=$HOME/.miniconda/bin:$PATH
 
+# SSH Agent (save passphrase after first use)
+if [ $(ps aux | grep -v grep | grep ssh-agent | wc -l) -eq 0 ]; then
+	eval $(ssh-agent -s) > /dev/null
+fi
+
 # History stuff
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
@@ -210,4 +215,9 @@ shopt -s histappend
 
 # added by Miniconda3 installer
 export PATH="$HOME/miniconda3/bin:$PATH"
+
+# Custom function for magrathea GPUs
+if [[ -f ~/.magrathea_fcn ]]; then
+    source ~/.magrathea_fcn
+fi
 
